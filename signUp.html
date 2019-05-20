@@ -1,0 +1,109 @@
+<?php
+session_start();
+?>
+
+<!DOCTYPE html>
+<html>
+      
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Sign Up</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <style>
+    #body{
+background: rgb(2,36,51);
+font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+    input {
+        margin-top:1em;
+        border-radius:5px;
+        width:200px;
+        height:auto;
+        padding:8px;
+        border:1px solid black;
+    }
+  
+    button[type=signup]{
+    width:100%;
+    background-color: rgb(76, 139, 175);
+    color: white;
+    padding: 14px 20px;
+    margin: 20px 0;
+    border:none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+button[type=signup]:hover{
+    background: #45a049;
+}
+   form {
+                width:30%;
+               height:100%;
+               padding:10px;
+               margin-top:100px;
+              background:white;
+              border-radius:5px;
+    }
+    a{
+        text-decoration:none;
+        display:inline-block;
+        color:white;
+        padding-right:15px;   
+    }
+    a:hover{
+            color: rgb(76, 139, 175);
+            transform:scale(1.3);
+           transition:1s ease-in-out;
+    }
+footer{
+        width:100%;
+        height:auto;
+        background:black;
+        margin:auto;
+    }
+    ul li{
+        list-style: none;
+        padding:0.2em;
+        float: inherit;
+        margin:0.2em;
+        
+    }
+    #outter{
+        text-align: right;
+    }
+    
+    </style>
+    <script src="main.js"></script>
+    
+</head>
+<body id="body">
+       
+ <center>
+    <form action="signUp.php" method="POST" id="form">
+        <h2 style="color:red;"> Sign Up </h2><hr>
+      <label for="first">First Name:</label>  <input type="text" name="First" id="first" placeholder="First Name"><br>
+      <label for="Last">Last Name:</label>    <input type="text" name="Last" id="Last" placeholder="Surname"><br>
+      <label for="Admin">Admission:</label>     <input type="text" name="Admin" id="Admission" placeholder="Admission No"><br>
+      <label for="Password">Password:</label> <input type="Password" name="Password" id="Password" placeholder="Set password"><br>
+             <button type="signup" value="signup" name="signup" >Sign Up</button>
+    </form>
+    <p style="color:white;"> Note: If you're registered, Please <a href="Login.html" style="color:Red; transform:scale(1);">Login</a></p> 
+</center>
+
+<footer>
+        <div id="outter">
+          <!--  <p style="color:white;">Tender Gems</p>-->
+        <ul>
+         <li>  <a href="index.html">Home</a></li>
+         <li>  <a href="About.html">About us</a></li>
+         <li>  <a href="Gallery.php">Gallery</a></li>
+         <li>  <a href="Result.html">Result</a></li>
+         <li>  <a href="First Temp/Faq.html">Faq</a></li>
+        </ul>
+        </div>
+    </footer>
+  
+</body>
+</html>

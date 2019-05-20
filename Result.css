@@ -1,0 +1,73 @@
+input[type=text],[type=select],[type=date],select{
+    width: 15%;
+    padding:12px 20px;
+    margin: 0px;
+    display: inline-block;
+    border: 1px solid rgb(241, 101, 241);
+    border-radius:4px;
+    box-sizing:border-box;
+}
+
+#head{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+button[type=submit]{
+    width:100%;
+    background-color: rgb(76, 139, 175);
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border:none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+button[type=submit]:hover{
+    background: #45a049;
+}
+div #form{
+    border-radius: 5px;
+    background-color: #e91b1b;
+    /*padding:20px;    */
+}
+#alleffect{
+   /* background: rgb(2,36,51);*/
+    background: #e5eec3; 
+    z-index: 1;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+ #Hdteacher, h4{
+    border-radius:4px;
+    display: inline-block;
+    margin: 8px;
+
+}
+#table, #alleffect{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+   /* padding: 2px;*/
+    height: 20px;
+       
+}
+#table td, #table th{
+    border:1px solid #ddd;
+    padding:8px;   
+}
+#table tr:nth-child(even){
+    background-color: #f2f2f2; 
+}
+#table tr:hover {
+    background-color: #ddd;
+}
+#table th{
+    padding-top: 2px;
+    background-color: #4CAF50;
+    color: white;
+}
+td{
+    text-align: center;   }
+button, #printing{
+width: 50%;
+
+}

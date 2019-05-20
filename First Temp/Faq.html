@@ -1,0 +1,359 @@
+<!DOCTYPE HTML>
+<!--
+	Retrospect by TEMPLATED
+	templated.co @templatedco
+	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
+-->
+<html>
+	<head>
+		<title>Frequently Asked Questions</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+		<style>
+	.wrapper.style1{
+		background:rgb(2,31,56);
+	}
+	.feature.right{
+		border-radius: 10px;
+	}
+	.feature.left{
+		border-radius:10px;
+	}
+
+	.content{
+		border-radius:10px;
+	}
+	#anchor{
+		text-decoration: none;
+	}
+	#more1  {
+		display:none;
+
+	}
+	#more2{
+		display:none;
+	}
+	#more4{
+		display: none;
+	}
+	#banner{
+		background-image: url(../images/FAQ.jpg);
+	}
+	.navbar a{
+			font-size: 16px;
+			color: white;
+			text-decoration: none;
+		}
+		.dropdown{
+			float: left;
+			overflow: hidden;		
+		}
+
+		.dropdown .dropbtn{
+			font-size: 16px;
+			border: none;
+			outline: none;
+			color: white;
+			font-family:inherit;
+			margin:0;
+		}
+
+		.dropdown-content{
+			display: none;
+			float:right;
+			background-color: #fff;
+			min-width: 160px;
+			box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+			z-index: 1;
+		}
+		.dropdown-content a{
+			float: unset;
+			color: black;
+			font-family: inherit;
+			padding: 12px 16px;
+			text-decoration: none;
+			display: block;
+			text-align: left;
+			
+		}
+		.dropdown-content a:hover{
+			background-color: #999;
+		}
+		.dropdown:hover .dropdown-content{
+			display: block;
+		}
+		#resultcolor{
+			color:white;
+		}
+		#resultcolor:hover{
+			color: white;
+		}
+
+		</style>
+	</head>
+	<body class="landing" >
+
+		<!-- Header -->
+			<header id="header" class="alt">
+				<h1><a href="index.html">FAQ</a></h1>
+				<a href="#nav">Menu</a>
+			</header>
+
+		<!-- Nav -->
+			<nav id="nav">
+				<ul class="links">
+					<li><a href="../index.html">Home</a></li>
+					<li><a href="../About.html">About us</a></li>
+					<li><a href="../Gallery.php">Gallery</a></li>
+					<li><a href="Faq.html">Faq</a></li>
+
+					<div class="dropdown" style="color:white">
+						<li  class="dropbtn"id="resultcolor" > RESULT <i class="fa fa-caret-down"> </i>
+						</li>
+						<div class="dropdown-content">
+						<a href="../Login.html"><b>PARENT</b></a>
+						<a href="../LoginAdmin.html"><b>TEACHER<b></a>
+						</div>
+					
+				</ul>
+			</nav>
+
+		<!-- Banner<img src="../images/FAQ.jpg" alt=""></img> -->
+			<section id="banner">
+				
+				<i class="icon fa-diamond"></i>
+				
+				<h2>FAQ</h2>
+				<p>Frequently Asked Question</p>
+				<ul class="actions">
+					<li><a href="../index.html" class="button big special">Home</a></li>
+				</ul>
+			</section>
+
+		<!-- One -->
+		<!--First Level-->
+			<section id="one" class="wrapper style1">
+				<div class="inner">
+					<article class="feature left">
+						<span class="image"><img src="images/pic01.png" alt="" /></span>
+						<div class="content">
+							<h2>SCHOOL RULES AND REGULATIONS</h2>
+							<ol>
+								<li> Lateness shall not be condole by the school management</li>
+								<li> Neatness of the pupil is of ultmost imporatance</li>
+								<li> Pupils are to attend school regularly<span id="dots1">...</span></li>
+								<span id="more1">
+								<li> Pupils most be ready to learn</li>
+								<li> Carry out instruction by their teacher</li>
+								<li> Observe uniform code of the school </li>
+								<li> Keep the school environment clean and free of litters</li>
+							</ol>
+						</span>
+								</p>
+							<ul class="actions">
+								<li>
+								<button class="button alt" id="button1" onclick="myfunction1()">Read More</button>
+								</li>
+							</ul>
+							
+							<script>
+								function myfunction1(){
+									var dots1 = document.getElementById("dots1");
+									var more1 = document.getElementById("more1");
+									var button1 = document.getElementById("button1");
+									if (dots1.style.display=="none") {
+										dots1.style.display="inline";
+										more1.style.display="none";
+										button1.innerHTML="Read More";
+										}
+										else {
+											dots1.style.display="none";
+											more1.style.display="inline";
+											button1.innerHTML="Read Less";
+										}
+								}
+							
+							</script>
+							
+						</div>
+					</article>
+					<!--Second Level-->
+					<article class="feature right">
+						<span class="image"><img src="images/picturre.jpg" alt="" /></span>
+						<div class="content">
+							<h2>New term Begins and Ends</h2>
+							New term begins Januray 14 2019. parent are adviced to pay their wards school fees between the first-two weeks of resumption. For the first-two weeks the school closes by 1:30pm, 
+							after two weeks the school closes by 2:00pm  ( for madrasah student school closes by 4:00pm)<span id="dots2">...</span></br> 
+						<span id="more2">	The 2018/2019 term ends by 22nd of March 2019. Parent can check their ward result by visiting our school site at <a href="tendergems.com" id="anchor">Tendergems.com</a> </span>
+
+							<ul class="actions">
+								<li>
+								<button href="#" class="button alt" id="button2" onclick="myfunction2()">Read More</button>
+								</li>
+							</ul>
+							<script>
+									function myfunction2(){
+											var dots2=document.getElementById("dots2");
+											var more2= document.getElementById("more2");
+											var button2= document.getElementById("button2");
+										
+										if (dots2.style.display=="none") {
+											dots2.style.display="inline";
+											more2.style.display="none";
+											button2.innerHTML= "Read More";
+										}
+										else {
+											dots2.style.display="none";
+											more2.style.display="inline";
+											button2.innerHTML="Read Less";
+										}
+									}
+									
+									
+									</script>
+						</div>
+					</article>
+					<!--third Level-->
+					<article class="feature left">
+						<span class="image"><img src="images/school.jpg" alt="" /></span>
+						<div class="content">
+							<h2>Shool opening and closing hours</h2>
+							<p>The school hour starts by 7:30 am and latest by 8:00am ...Parent are expected to pickup their wards latest 30 minutes after closing hour.</p>
+							<ul class="actions">
+								<li>
+									<button class="button alt" id="button2" onclick="myfunction()">Read More</button>
+								</li>
+							</ul>
+							
+						</div>
+					</article>
+					<!--Fouth Level-->
+					<article class="feature right">
+						<span class="image"><img src="images/pic04.png" alt="" /></span>
+						<div class="content">
+							<h2>CLass Rules</h2>
+							<ol start="1">
+								<li>Come to school early</li>
+								<li>Sit quietly in the class room</li>
+								<li>Don't make noise</li>
+								<li>Be ready to Learn <span id="dots4">...</span></li>
+				<span id="more4"><li>Do your Home work</li>
+								<li>Don't fight others</li>
+								<li>Obey your teachers</li>
+								<li>Dont liter the floor</li>
+								<li>Be punctual</li>
+								<li>Don't beg from others</li> </span>		
+								
+							</ol>
+							<ul class="actions">
+								<li>
+								<button id="button4" href="#" class="button alt" onclick="myfunction4()">Read More</button>
+								</li>
+							</ul>
+							<script>
+									function myfunction4(){
+										var dots4 = document.getElementById("dots4");
+										var more4 = document.getElementById("more4");
+										var button4 = document.getElementById("button4");
+										if (dots4.style.display=="none") {
+											dots4.style.display="inline";
+											more4.style.display="none";
+											button4.innerHTML="Read More";
+											}
+											else {
+												dots4.style.display="none";
+												more4.style.display="inline";
+												button4.innerHTML="Read Less";
+											}
+									}
+								
+								</script>
+						</div>
+					</article>
+				</div>
+			</section>
+
+		<!-- Two -->
+			<section id="two" class="wrapper special">
+				<div class="inner">
+					<header class="major narrow">
+						<h2>Motto<br> knowledge and humility</h2>
+						<p>9, Sulieman Street off lagos Road, Saw-mill, ilorin, kwara State.</br>Ps: Islamic Village Gerewu ilorin, kwara State.</p>
+					</header>
+				
+					<ul class="actions">
+						<li><a href="../Gallery.php" class="button big alt">School Gallery</a></li>
+					</ul>
+				</div>
+			</section>
+
+		<!-- Three Emptied -->
+	
+
+		<!-- Four -->
+			<section id="four" class="wrapper style2 special">
+				<div class="inner">
+					<header class="major narrow">
+						<h2>Get in touch</h2>
+						<p>You can send us Feedback to help us serve you better</p>
+					</header>
+					<form action="Faq.php" method="POST">
+						<div class="container 75%">
+							<div class="row uniform 50%">
+								<div class="6u 12u$(xsmall)">
+									<input name="name" placeholder="Name" type="text" />
+								</div>
+								<div class="6u$ 12u$(xsmall)">
+									<input name="email" placeholder="Email" type="email" />
+								</div>
+								<div class="12u$">
+									<textarea name="message" placeholder="Message" rows="4"></textarea>
+								</div>
+							</div>
+						</div>
+						<ul class="actions">
+							<li><input type="submit" class="special" value="Submit" /></li>
+							<li><input type="reset" class="alt" value="Reset" /></li>
+						</ul>
+					</form>
+				</div>
+			</section>
+
+		<!-- Footer -->
+			<footer id="footer">
+				<div class="inner">
+					<ul class="icons">
+						<li><a href="https://Facebook.com/tendergems" class="icon fa-facebook" title="Facebook">
+							<span class="label" >Facebook</span>
+						</a></li>
+						<li><a href="#" class="icon fa-twitter" title="Twitter">
+							<span class="label" >Twitter</span>
+						</a></li>
+						<li><a href="#" class="icon fa-instagram" title="Instagram">
+							<span class="label" >Instagram</span>
+						</a></li>
+						<li><a href="https://gmail.com/Tendergems01" class="icon fa-envelope-o" title="Gmail">
+							<span class="label" >Gmail</span>
+						</a></li>
+					</ul>
+					<ul class="copyright">
+						<li>&copy; All right reserved 2018</li>
+						
+						<li >Design by: <a href="http://gmail.com@Haroonabdulrazaq@gmail.com" style="text-decoration:none">Haroon</a></li>
+					</ul>
+				</div>
+			</footer>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

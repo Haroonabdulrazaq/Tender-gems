@@ -1,0 +1,313 @@
+<?php
+session_start();
+?>
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Report sheet</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="Result.css" />
+    <script src="main.js"></script>
+    <style>
+    #passport{
+        text-align: right;
+    }
+    
+    #head{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+#background{
+    position:absolute;
+    z-index: -1;
+    display:block;
+    min-height:100%;
+    min-width:50%;
+
+}
+
+#bg-text{
+color:lightgrey;
+font-size:250px;
+transform:rotate(300deg);
+-webkit-transform:rotate(300deg);
+}
+a{
+    text-decoration:none;
+    display:inline-block;
+    color:white;
+    padding-right:15px;   
+    }
+    a:hover{
+    color: rgb(76, 139, 175);
+    transform:scale(1.2);
+    transition:1s ease-in-out;
+    }
+footer{
+    width:100%;
+    height:auto;
+    background:black;
+    margin-top:100px;
+    }
+    ul li{
+        list-style: none;
+        padding:0.2em;
+        float: inherit;
+        margin:0.2em;
+        
+    }
+    #outter{
+        text-align: right;
+    }
+    input[type=number]{
+        width: 15%;
+        padding:12px 20px;
+        margin: 0px;
+        display: inline-block;
+        border: 1px solid rgb(241, 101, 241);
+        border-radius:4px;
+        box-sizing:border-box;
+    }
+    #alleffect{
+        width:100%;
+    }
+
+
+</style>
+</head>
+<body id="alleffect"> 
+   
+    <h1 id="head"  style = "text-align:center ">TENDER GEMS MONTESSORI SCHOOL</h1>
+    <h3 id="head"  style = "text-align:center ">9, sulieman street off Lagos Road saw-mill ilorin, kwara State<br>P.S Islamic village gerewu ilorin, kwara State<br>tel:08099560911, 
+        09071560109, 08149945549</h3>
+        <hr color ="blue"> <hr color ="blue">  
+    <h2  id="head" style = "text-align:center ">Pupil's Report Sheet</h2>
+ 
+    <div id="form">
+    <form id ="details" action="insert.php" method="POST">
+            <div id="passport">Choose Passport <input type="file"  name="passport" value="passport" style ="text-align:right" > </input></div>
+            <p>Student Name:    <input type="text" name="fullName" placeholder="Full Name"></input></p>
+            <p>Admission Number:    <input type="text" name="AdmissionNo" placeholder="Admission Number"></input></p>
+            <p>Gender    <select name="gender">
+                <option  value="None">Select gender</option>
+                <option  value="Male"> Male</option>
+                <option  value="Female"> Female</option>
+            </select></p>
+            <p>Date of Birth:    <input type="date" name="DOB" ></input></p>
+            <p>Today's Date:    <input type="date" name="date" ></input></p>
+         
+            <p>Basic:<input type="text" name="Basic" placeholder="Academic Class"></input>
+            <select name="Term">
+                    <option  value="None">Select Term</option>
+                    <option  value="1st Term"> 1st Term</option>
+                    <option  value="2nd Term"> 2nd Term</option>
+                    <option  value="3rd Term"> 3rd Term</option>
+                </select></p>
+                
+  <p>English Language: <input type="number" min="0" max="20" name="EngTest1" placeholder="Periodic Test1(20)" ></input>
+    <input type="number" min="0" max="20" name="EngTest2" placeholder="Periodic Test2(20)" ></input>
+    <input type="number" min="0" max="60" name="EngExam" placeholder="Exam(60)" ></input>
+    
+</p>
+<p>Mathematics: <input type="number" min="0" max="20" name="MatTest1" placeholder="Periodic Test1(20)" ></input>
+    <input type="number" min="0" max="20" name="MatTest2" placeholder="Periodic Test2(20)" ></input>
+    <input type="number" min="0" max="60" name="MatExam" placeholder="Exam(60)" ></input>
+    <div id="background">
+            <p id="bg-text">TenderGems</p>
+        </div> 
+    
+</p>
+<p>Arabic: <input type="number" min="0" max="20" name="AraTest1" placeholder="Periodic Test1(20)" ></input>
+    <input type="number" min="0" max="20" name="AraTest2" placeholder="Periodic Test2(20)" ></input>
+    <input type="number" min="0" max="60" name="AraExam" placeholder="Exam(60)" ></input>
+    
+</p>
+<p>Phonetics: <input type="number" min="0" max="20" name="PhoTest1" placeholder="Periodic Test1(20)" ></input>
+    <input type="number" min="0" max="20" name="PhoTest2" placeholder="Periodic Test2(20)" ></input>
+    <input type="number" min="0" max="60" name="PhoExam" placeholder="Exam(60)" ></input>
+  
+</p>
+<p>Deen/Adkhar: <input type="number" min="0" max="20" name="DeeTest1" placeholder="Periodic Test1(20)" ></input>
+    <input type="number" min="0" max="20" name="DeeTest2" placeholder="Periodic Test2(20)" ></input>
+    <input type="number" min="0" max="60" name="DeeExam" placeholder="Exam(60)" ></input>
+   
+    
+</p>
+<p>Creative Art: <input type="number" min="0" max="20" name="CreTest1" placeholder="Periodic Test1(20)" ></input>
+    <input type="number" min="0" max="20" name="CreTest2" placeholder="Periodic Test2(20)" ></input>
+    <input type="number" min="0" max="60" name="CreExam" placeholder="Exam(60)" ></input>
+</p>
+<p>Hand Writing: <input type="number" min="0" max="20"  name="HanTest1" placeholder="Periodic Test1(20)" ></input>
+    <input type="number" min="0" max="20"  name="HanTest2" placeholder="Periodic Test2(20)" ></input>
+    <input type="number" min="0" max="60"  name="HanExam" placeholder="Exam(60)" ></input>
+   
+</p>
+<p>Civic Education: <input type="number" min="0" max="20" name="CivTest1" placeholder="Periodic Test1(20)" ></input>
+    <input type="number" min="0" max="20" name="CivTest2" placeholder="Periodic Test2(20)" ></input>
+    <input type="number" min="0" max="60" name="CivExam" placeholder="Exam(60)" ></input>
+   
+</p>
+<p>Basic Science: <input type="number" min="0" max="20"  name="BasTest1" placeholder="Periodic Test1(20)" ></input>
+    <input type="number" min="0" max="20"  name="BasTest2" placeholder="Periodic Test2(20)" ></input>
+    <input type="number" min="0" max="60" name="BasExam" placeholder="Exam(60)" ></input>
+   
+</p>
+<p>Verbal Reasoning: <input type="number" min="0" max="20" name="VerTest1" placeholder="Periodic Test1(20)" ></input>
+    <input type="number" min="0" max="20" name="VerTest2" placeholder="Periodic Test2(20)" ></input>
+    <input type="number" min="0" max="60" name="VerExam" placeholder="Exam(60)" ></input>
+   
+</p>
+<p>Vocational Aptitude: <input type="number" min="0" max="20" name="VocTest1" placeholder="Periodic Test1(20)" ></input>
+    <input type="number" min="0" max="20" name="VocTest2" placeholder="Periodic Test2(20)" ></input>
+    <input type="number" min="0" max="60" name="VocExam" placeholder="Exam(60)" ></input>
+    
+</p>
+<p>Quantitative Reasoning: <input type="number" min="0" max="20" name="QuaTest1" placeholder="Periodic Test1(20)" ></input>
+    <input type="number" min="0" max="20" name="QuaTest2" placeholder="Periodic Test2(20)" ></input>
+    <input type="number" min="0" max="60" name="QuaExam" placeholder="Exam(60)" ></input>
+</p>
+<p>Tahfeedh: <input type="number" min="0" max="20" name="TahTest1" placeholder="Periodic Test1(20)" ></input>
+    <input type="number" min="0" max="20" name="TahTest2" placeholder="Periodic Test2(20)" ></input>
+    <input type="number" min="0" max="60" name="TahExam" placeholder="Exam(60)" ></input>
+ <!--   fullName AdmissionNo gender DOB Class YorTest1 YorTest2 YorTest2 YorExam CulTest1 CulTest2 CulExam MatTest1 MatTest2 MatExam  IssTest2 IssExam EngTest1 EngTest2 EngExam
+    VerTest1 VerTest2 VerExam HanTest1 HanTest2 HanExam AraTest1 AraTest2 AraExam BasTest1 BasTest2 BasExam AgrTest1 AgrTest2 AgrExam NatTest1 NatTest2 NatExam
+    ComTest1 ComTest2 ComExam QuaTest1 QuaTest2 QuaExam-->
+<p>Computer Science: <input type="number" min="0" max="20" name="ComTest1" placeholder="Periodic Test1(20)" ></input>
+    <input type="number" min="0" max="20" name="ComTest2" placeholder="Periodic Test2(20)" ></input>
+    <input type="number" min="0" max="60" name="ComExam" placeholder="Exam(60)" ></input>
+
+<p>Social Studies: <input type="number" min="0" max="20" name="SocTest1" placeholder="Periodic Test1(20)" ></input>
+    <input type="number" min="0" max="20" name="SocTest2" placeholder="Periodic Test2(20)" ></input>
+    <input type="number" min="0" max="60" name="SocExam" placeholder="Exam(60)" ></input>
+
+<p>P.H.E: <input type="number" min="0" max="20" name="PheTest1" placeholder="Periodic Test1(20)" ></input>
+    <input type="number" min="0" max="20" name="PheTest2" placeholder="Periodic Test2(20)" ></input>
+    <input type="number" min="0" max="60" name="PheExam" placeholder="Exam(60)" ></input>
+
+<p>Home Econonmics: <input type="number" min="0" max="20" name="HomTest1" placeholder="Periodic Test1(20)" ></input>
+    <input type="number" min="0" max="20" name="HomTest2" placeholder="Periodic Test2(20)" ></input>
+    <input type="number" min="0" max="60" name="HomExam" placeholder="Exam(60)" ></input>
+   
+<p>Yoruba: <input type="number" min="0" max="20" name="YorTest1" placeholder="Periodic Test1(20)" ></input>
+    <input type="number" min="0" max="20" name="YorTest2" placeholder="Periodic Test2(20)" ></input>
+    <input type="number" min="0" max="60" name="YorExam" placeholder="Exam(60)" ></input>
+   
+</p>
+     <p name="TotalTest1"></p>
+    <p name="TotalTest2" ></p>
+    <p name="TotalExam"  ></p>
+    <p name="Total"  ></p>
+   
+</p>
+ <p name="TotalAvg"></p>
+   
+
+</div>
+
+<hr color ="BLUE"><hr color="BLUE" >
+<table id="skills">
+    <tr>
+           
+            <p style="text-align:center;"><h4>SKILLS AND BEHAVIOUR&nbsp;&nbsp;&nbsp;&nbsp;RATING ( 1 - 5 )</h4></p>
+<td id="tdmargin" style="text-align:left; ">
+        <p>Handwriting:&nbsp;5<input type="radio" name="handwriting" value="5"></input>
+            4<input type="radio" name="handwriting" value="4"></input>
+            3<input type="radio" name="handwriting" value="3"></input>
+            2<input type="radio" name="handwriting" value="2"></input>
+            1<input type="radio" name="handwriting" value="1"></input>
+         </p>
+ <p>Fluency:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;5<input type="radio" name="Fluency" value="5"></input>
+    4<input type="radio" name="Fluency" value="4"></input>
+    3<input type="radio" name="Fluency" value="3"></input>
+    2<input type="radio" name="Fluency" value="2"></input>
+    1<input type="radio" name="Fluency" value="1"></input>
+ </p>
+ <p>Punctuality:&nbsp;&nbsp;&nbsp;5<input type="radio" name="Punctuality" value="5"></input>
+    4<input type="radio" name="Punctuality" value="4"></input>
+    3<input type="radio" name="Punctuality" value="3"></input>
+    2<input type="radio" name="Punctuality" value="2"></input>
+    1<input type="radio" name="Punctuality" value="1"></input>
+ </p>
+ <p>Neatness: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 5<input type="radio" name="Neatness" value="5"></input>
+    4<input type="radio" name="Neatness" value="4"></input>
+    3<input type="radio" name="Neatness" value="3"></input>
+    2<input type="radio" name="Neatness" value="2"></input>
+    1<input type="radio" name="Neatness" value="1"></input>
+ </p>
+ <p>Attentiveness:5<input type="radio" name="Attentiveness" value="5"></input>
+    4<input type="radio" name="Attentiveness" value="4"></input>
+    3<input type="radio" name="Attentiveness" value="3"></input>
+    2<input type="radio" name="Attentiveness" value="2"></input>
+    1<input type="radio" name="Attentiveness" value="1"></input>
+ </p>
+
+</td>
+
+<td id="tdmargin" style="text-align:right; ">
+       
+       
+<p>Politeness:5<input type="radio" name="Politeness" value="5"></input>
+            4<input type="radio" name="Politeness" value="4"></input>
+            3<input type="radio" name="Politeness" value="3"></input>
+            2<input type="radio" name="Politeness" value="2"></input>
+            1<input type="radio" name="Politeness" value="1"></input>
+</p>
+<p>Relationship with others:5<input type="radio" name="Relationship" value="5"></input>
+    4<input type="radio" name="Relationship" value="4"></input>
+    3<input type="radio" name="Relationship" value="3"></input>
+    2<input type="radio" name="Relationship" value="2"></input>
+    1<input type="radio" name="Relationship" value="1"></input>
+ </p>
+ <p>Self Responsibility:5<input type="radio" name="Responsibility" value="5"></input>
+    4<input type="radio" name="Responsibility" value="4"></input>
+    3<input type="radio" name="Responsibility" value="3"></input>
+    2<input type="radio" name="Responsibility" value="2"></input>
+    1<input type="radio" name="Responsibility" value="1"></input>
+ </p>
+ <p>Self Control:5<input type="radio" name="SelfControl" value="5"></input>
+    4<input type="radio" name="SelfControl" value="4"></input>
+    3<input type="radio" name="SelfControl" value="3"></input>
+    2<input type="radio" name="SelfControl" value="2"></input>
+    1<input type="radio" name="SelfControl" value="1"></input>
+ </p>
+
+</td>
+</tr>
+
+<hr>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Key to Ratings: 5-Excellent&nbsp;&nbsp;&nbsp;
+        4-Good&nbsp;&nbsp;&nbsp;3-Average&nbsp;&nbsp;&nbsp;2-Poor&nbsp;&nbsp;&nbsp;1-very poor</p>
+
+<tr><td>
+       
+        <p>Head Teacher's Comment:<textarea cols="40" rows="3" name="hdTeacher"></textarea></p></td>
+    <td><p style="text-align:right">Class Teacher's Comment:<textarea cols="40" rows="3" name="clTeacher"></textarea></p></td>
+    
+</tr>
+
+</table>
+<button type="submit" name="Submit" value="Submit">Submit</button>
+
+</form>
+
+<footer>
+        <div id="outter">
+          <!--  <p style="color:white;">Tender Gems</p>-->
+        <ul>
+         <li>  <a href="index.html">Home</a></li>
+         <li>  <a href="About.html">About us</a></li>
+         <li>  <a href="Gallery.php">Gallery</a></li>
+         <li>  <a href="First Temp/Faq.html">Faq</a></li>
+        </ul>
+        </div>
+    </footer>
+</body>
+<!--
+ fullName AdmissionNo gender DOB date Basic Term EngTest1 EngTest2 EngExam MatTest1 MatTest2 MatExam AraTest1 AraTest2 AraExam
+    PhoTest1 PhoTest2 PhoExam DeeTest1 DeeTest2 DeeExam HanTest1 HanTest2 HanExam CivTest1 CivTest2 CivExam BasTest1 BasTest2 BasExam
+    VerTest1 VerTest2 VerExam VocTest1 VocTest2 VocExam QuaTest1 QuaTest2 QuaExam TahTest1 TahTest2 TahExam ComTest1 ComTest2 ComExam
+    SocTest1 SocTest2 SocExam PheTest1 PheTest2 PheExam HomTest1 HomTest2 HomExam YorTest1 YorTest2 YorExam3
+
+-->
+</html>

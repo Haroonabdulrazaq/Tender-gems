@@ -1,0 +1,327 @@
+
+<html>
+	<head>
+		<title>Tender Gems</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="assets/css/mainx.css" />
+		<style>
+		#more{
+			display: none;
+		}
+		#mor{
+			display: none;
+		}
+
+		.content{
+			margin:20px;
+		}
+		#myBtn, #myBt{
+			margin-bottom: 10px;
+		}
+		.navbar a{
+			font-size: 16px;
+			color: white;
+			text-decoration: none;
+		}
+		.dropdown{
+			float: left;
+			overflow: hidden;		
+		}
+
+		.dropdown .dropbtn{
+			font-size: 16px;
+			border: none;
+			outline: none;
+			color: white;
+			font-family:inherit;
+			margin:0;
+		}
+
+		.dropdown-content{
+			display: none;
+			float:right;
+			background-color: #fff;
+			min-width: 160px;
+			box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+			z-index: 1;
+		}
+		.dropdown-content a{
+			float: unset;
+			color: black;
+			font-family: inherit;
+			padding: 12px 16px;
+			text-decoration: none;
+			display: block;
+			text-align: left;
+			
+		}
+		.dropdown-content a:hover{
+			background-color: #999;
+		}
+		.dropdown:hover .dropdown-content{
+			display: block;
+		}
+		#resultcolor{
+			color:grey;
+		}
+		#resultcolor:hover{
+			color: white;
+		}
+	
+	
+		</style>
+	</head>
+	<body class ="alleffect">
+
+		<!-- Header -->
+			<header id="header" class="alt">
+				<div class="logo"><a href="index.html">Designed <span>by HAROON</span></a></div>
+				<a href="#menu">Menu</a>
+			</header>
+
+		<!-- Nav -->
+			<nav id="menu" class="navbar">
+				<ul class="links">
+					<li><a href="index.html">Home</a></li>
+					<li><a href="About.html">About us</a></li>
+					<li><a href="Gallery.php">Gallery</a></li>
+					<li><a href="First Temp/Faq.html">FAQ</a></li>
+					<div class="dropdown" style="color:white">
+						<li  class="dropbtn"id="resultcolor" > RESULT
+					<i class="fa fa-caret-down"> </i>
+						</li>
+						<div class="dropdown-content">
+						<a href="Login.html"><b>PARENT</b></a>
+						<a href="LoginAdmin.html"><b>TEACHER<b></a>
+						</div>
+
+					</ul>
+
+
+
+
+
+			<!--	<li class="dropdown">
+					<li class="dropbtn"><a href="#">
+						Result</a> <i class=" fa fa-caret-down"></i>
+					<div class="dropdown-content">
+						<a href="#">Link 1</a>
+						<a href="#">Link 2</a>	
+					</div>
+					</li>
+				</li>	-->		
+				
+			</nav>
+			
+		<!-- Banner -->
+			<section class="banner full">
+				<article>
+					<img src="images/TendergemSlide01.jpg" alt="" />
+					<div class="inner">
+						<header>
+							<p>Islamic Montesorri School</p>
+							<h2>TENDER GEMS</h2>
+						</header>
+					</div>
+				</article>
+				<article>
+					<img src="images/TendergemSlide02.jpg" alt="" />
+					<div class="inner">
+						<header>
+								
+							<p>We learn better while having fun</p>
+							<h2>Excursion</h2>
+						</header>
+					</div>
+				</article>
+				<article>
+					<img src="images/TendergemSlide03.jpg"  alt="" />
+					<div class="inner">
+						<header>
+							<p>A good conducive enviornment for learining</p>
+							<h2>Character and Good Manners</h2>
+						</header>
+					</div>
+				</article>
+				<article>
+					<img src="images/TendergemSlide04.jpg"  alt="" />
+					<div class="inner">
+						<header>
+							<p>Pupil's Activites</p>
+							<h2>Art and Craft</h2>
+						</header>
+					</div>
+				</article>
+				<article>
+					<img src="images/TendergemSlide05.jpg"  alt="" />
+					<div class="inner">
+						<header>
+							<p>In serene and conducive environment for learning</p>
+							<h2>Pupils</h2>
+						</header>
+					</div>
+				</article>
+			</section>
+
+		<!-- One -->
+			<section id="one" class="wrapper style2">
+				<div class="inner">
+					<div class="grid-style">
+
+						<div>
+							<div class="box">
+								<div class="image fit">
+									<img src="images/Tendergem06.jpg" alt="" />
+								</div>
+								<div class="content">
+									<header class="align-center">
+										<p></p>
+										<h2>Mission</h2>
+									</header>
+								<p style="color:black;">Tender gems mission is to impact knowledge in it's comprehensiveness for academic, spiritual and moral excellence<span id="dots">...</span><span id="more">
+										based on islamic doctrine, under God fearing and competent tutors</span></p>
+									<center><button onclick="myFunction()" id="myBtn">Read More</button></center>
+									<footer class="align-center">
+									<!--	<a href="#" class="button alt">Learn More</a>-->
+										<script>
+											function myFunction(){
+										
+												var dots = document.getElementById("dots");
+												var moreText= document.getElementById("more");
+												var btnText= document.getElementById("myBtn");
+										
+												if (dots.style.display==="none") {
+													dots.style.display="inline";
+													btnText.innerHTML="Read More";
+													moreText.style.display ="none";
+													}
+													else	{
+														dots.style.display ="none";
+														btnText.innerHTML ="Read Less";
+														moreText.style.display ="inline";
+										
+													}
+										
+											}
+										</script>
+									</footer>
+								</div>
+							</div>
+						</div>
+						<div>
+							<div class="box">
+								<div class="image fit">
+									<img src="images/Tendergem07.jpg" alt="" />
+								</div>
+								<div class="content">
+									<header class="align-center">
+										<p></p>
+										<h2>Vision</h2>
+									</header>
+									<p style="color:black;">Tender gems is envision to be among the foremost learning center, where comprehensive and modern education is acquired for potential reformation 
+										<span id="dot">...</span><span id="mor">  in all spheres of life. </span></p>
+											  <center><button onclick="meFunction()" id="myBt">Read More</button></center>
+									<footer class="align-center">
+									<!--	<a href="#" class="button alt">Learn More</a>-->
+									<script>
+											function meFunction(){
+										
+												var dot = document.getElementById("dot");
+												var moreText= document.getElementById("mor");
+												var btnText= document.getElementById("myBt");
+										
+												if (dot.style.display==="none") {
+													dot.style.display="inline";
+													btnText.innerHTML="Read More";
+													moreText.style.display="none";
+													}
+													else	{
+														dot.style.display ="none";
+														btnText.innerHTML ="Read Less";
+														moreText.style.display="inline";
+										
+													}
+										
+											}
+										</script>
+
+									</footer>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</section>
+
+		<!--Two-->
+		<section  id="two2" >
+			<div class="innera">
+				<header class="align-center">
+					<h1 id="text"></h1>
+				
+					<h2 id="text" > </h2>
+				</header>
+			</div>
+		</section>
+
+		<!-- Three -->
+			<section id="three" class="wrapper style2">
+				<div class="inner">
+					<header class="align-center">
+						<p class="special">Pupils are trained in academics and skills</p>
+						<h2 style="color:white;">Pupil's at work</h2>
+					</header>
+					<div class="gallery">
+						<div>
+							<div class="image fit">
+								<a href="#"><img src="images/Tendergem08.jpg" alt="" /></a>
+							</div>
+						</div>
+						<div>
+							<div class="image fit">
+								<a href="#"><img src="images/Tendergem09.jpg" alt="" /></a>
+							</div>
+						</div>
+						<div>
+							<div class="image fit">
+								<a href="#"><img src="images/Tendergem10.jpg" alt="" /></a>
+							</div>
+						</div>
+						<div>
+							<div class="image fit">
+								<a href="#"><img src="images/Tendergem11.jpg" alt="" /></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			
+
+		<!-- Footer -->
+			<footer id="footer">
+				<div class="container">
+						
+					<ul class="icons">
+						<li><a href="#" class="icon fa-twitter" title="Twitter"><span class="label">Twitter</span></a></li>
+						<li><a href="#" class="icon fa-facebook" title="Facebook"><span class="label">Facebook</span></a></li>
+						<li><a href="#" class="icon fa-instagram" title="Instagram"><span class="label">Instagram</span></a></li>
+						<li><a href="#" class="icon fa-envelope-o" title="Gmail"><span class="label">Email</span></a></li>
+					</ul>
+					
+				</div>
+				<div class="copyright">
+					&copy;2018. All rights reserved.
+				</div>
+			</footer>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

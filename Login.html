@@ -1,0 +1,118 @@
+<?php
+session_start();
+?>
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Login</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+</head>
+<body>
+<style>
+    #body{
+background: rgb(2,36,51);
+font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+    input {
+        margin-top:1em ;
+        border-radius:5px;
+        width:200px;
+        height:auto;
+        padding:8px;
+        border:1px solid black;
+    }
+    button{
+        padding:5px;
+        margin:20px;
+        background:;
+    }
+    button[type=search]{
+    width:100%;
+    background-color: rgb(76, 139, 175);
+    color: white;
+    padding: 14px 20px;
+    margin: 20px 0;
+    border:none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+button[type=search]:hover{
+    background: #45a049;
+}
+   form {
+                width:30%;
+               height:100%;
+                padding:10px;
+               margin-top:100px;
+                background:white;
+                border-radius:5px;
+    }
+  
+    a{
+        text-decoration:none;
+        display:inline-block;
+        color:white;
+        padding-right:15px;   
+    }
+    a:hover{
+            color: rgb(76, 139, 175);
+            transform:scale(1.2);
+           transition:1s ease-in-out;
+    }
+footer{
+        width:100%;
+        height:auto;
+        background:black;
+        margin-top:100px;
+        
+    }
+    ul li{
+        list-style: none;
+        padding:0.2em;
+        float: inherit;
+        margin:0.2em;
+        
+    }
+    #outter{
+        text-align: right;
+    }
+
+    
+    </style>
+    <script src="main.js"></script>
+</head>
+<body id="body">
+ <center>
+    <form action="Login.php" method="POST" id="form">
+        <h2 style="color:red;">Search for Result </h2><hr>
+        <label for="Full name">Full name:</label>  <input type="text" name="fullName" placeholder="Full Name" required></input><br>
+        <label for="Matric num">Admission:</label><input type="text" name="AdmissionNo" id="Matric num" placeholder="Admission no" required><br>   
+        <label for="Term">Term:</label><select name="Term" id="Term" required>
+            <option  value="None"> None</option>        
+            <option  value="1st Term"> 1st Term</option>
+            <option  value="2nd Term"> 2nd Term</option>
+            <option  value="3rd Term"> 3rd Term</option>
+        </select><br>
+       
+             <button name="search" type="Search" value="Search" name="Serch">Search</button>
+    </form>
+</center>
+<footer>
+        <div id="outter">
+          <ul>
+         <li>  <a href="index.html">Home</a></li>
+         <li>  <a href="About.html">About us</a></li>
+         <li>  <a href="Gallery.php">Gallery</a></li>
+         <li>  <a href="First Temp/Faq.html">Faq</a></li>
+        </ul>
+        </div>
+    </footer>
+    
+
+</body>
+
+</html>
