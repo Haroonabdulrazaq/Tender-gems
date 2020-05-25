@@ -1,4 +1,2 @@
 # Tender-gems
-This is design for primary school use, it include a website and an automatic result system. The result system allows the teachers to 
-input student result and the system automatically generate the result and saves in a database(NOT PROVIDED BY GITHUB:::: SO YOU WILL 
-SEE ERROR LIKE "405 NOT ALLOWED"). At the other end the parent can view their pupils(wards) result from their phones or laptop. 
+Website for Tendergems montessori integrated with an automated result system. The result system allows teachers to input and record pupils result while the system does all the calculation involve in preparing result and records it in the database. The parent can also view the wards result online.
